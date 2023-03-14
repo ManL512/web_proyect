@@ -1,0 +1,65 @@
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #243763;
+    font-style: italic; /*Fuente de la lista*/
+  }
+  
+  nav li {
+    margin-right: 60px;
+  }
+  
+  nav li:last-child {
+    margin-right: 0;
+  }
+  
+  
+  nav a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: whitesmoke;
+    /*font-style: italic;*/
+  }
+  a:hover{
+    color: black;
+  }
+body{
+    scroll-margin-right:
+}
+  .boxContainer{
+    font-style: italic;
+  }
+  .box1{
+
+    padding: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: x-large;
+    color: aliceblue;
+    /*background-color: aliceblue;*/
+    height: 15vh; /* para que el contenedor ocupe todo el alto de la página */
+  }
+
+  .box2{
+    padding: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: x-large;
+    color: aliceblue;
+    /*background-color: aliceblue;*/
+    height: 20vh;
+  }
+  .box3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: x-large;
+    color: aliceblue;
+    height: 45vh
+  }
