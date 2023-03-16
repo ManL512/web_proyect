@@ -28,7 +28,7 @@ nav ul {
     color: black;
   }
 body{
-    scroll-margin-right:
+    scroll-margin-right: initial;
 }
   .boxContainer{
     font-style: italic;
@@ -62,4 +62,7 @@ body{
     font-size: x-large;
     color: aliceblue;
     height: 45vh
+  }
+  .box3 img{
+    width: 20%;
   }
