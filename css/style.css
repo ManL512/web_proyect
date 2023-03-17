@@ -37,98 +37,88 @@ nav ul {
         scroll-margin-right: initial;
     }
 
-  .boxContainer{
-    font-style: italic;
-  }
-  .box1{
-
-    padding: 2px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: x-large;
-    color: aliceblue;
-    /*background-color: aliceblue;*/
-    height: 15vh; /* para que el contenedor ocupe todo el alto de la página */
-  }
-
-  .box2{
-    padding: 2px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: x-large;
-    color: aliceblue;
-    /*background-color: aliceblue;*/
-    height: 20vh;
-  }
-  .box3{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: x-large;
-    color: aliceblue;
-    height: 45vh
-  }
-  .box3 img{
-    width: 20%;
-  }
-  .boxPrincipal{
+    /*boxPrincipal, el que contiene las imagenes de vista.*/
+  .boxPrincipal {
     display: flex; /* Esta propiedad convierte el contenedor en un contenedor flexible y permite aplicar otras propiedades de Flexbox */
     flex-direction: row; 
     /*justify content: alinea los elementos flexibles a lo largo del eje principal del box.*/
-    justify-content: space-around;
     flex-wrap: wrap;
     width: auto; /* ancho de la caja*/
     height: 600px; /* altura de la caja */
     background-color: #243763;
+    position: relative; /* Posición relativa para alinear los botones */
+    padding: 20px; /* Espacio interno para el contenido */
   }
-  .boxPrincipal img{
-    max-width: 100%;
-    width: 10%;
-    border: 1px solid black;
-    margin: 10px;
-    border-radius: 50%; /*convierte la iamagen a circular*/
+  
+  .botones {
+    position: absolute; /* Posición absoluta para superponer los botones */
+    display: flex; /* Esta propiedad convierte el contenedor en un contenedor flexible y permite aplicar otras propiedades de Flexbox */
+    justify-content: space-between; /* Alinea los elementos flexibles con un espacio entre ellos */
+    width: 100%; /* Ancho del contenedor de los botones */
+    top: 0; /* Alinear arriba */
+    left: 0; /* Alinear a la izquierda */
   }
+  
+  .botones button {
+    background-color: #4CAF50; /* Color de fondo */
+    border: none; /* Sin borde */
+    color: white; /* Color de texto */
+    padding: 10px 20px; /* Espacio interno */
+    text-align: center; /* Alineación de texto */
+    text-decoration: none; /* Sin subrayado */
+    display: inline-block; /* Mostrar como bloque */
+    font-size: 16px; /* Tamaño de fuente */
+    margin: 5px; /* Espacio externo */
+  }
+  
+  .botones button:hover {
+    background-color: #3e8e41; /* Color de fondo al pasar el cursor */
+  }
+  
+  /* box de contactarse DO NOT TOUCH !!*/
   .boxContacto {
-    font-size: 20px;
-    color: antiquewhite;
+    color: aliceblue;
     background-color: #243763;
-    border: 2px solid #ccc;
-    border-radius: 4px;
     padding: 20px;
-    max-width: 500px;
-    margin: 0 auto;
+    margin: 20px;
+    border-radius: 10px;
   }
   
-  form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  .boxContacto h4 {
+    font-size: 125%;
+    text-align: center;
+    margin-bottom: 20px;
   }
   
-  label, input, textarea {
+  .boxContacto form label {
     display: block;
-    margin-bottom: 10px;
+    font-weight: bold;
+    margin-bottom: 5px;
   }
   
-  input[type="text"], input[type="email"], textarea {
+  .boxContacto form input[type="text"],
+  .boxContacto form input[type="email"],
+  .boxContacto form textarea {
     width: 100%;
     padding: 10px;
-    border: 2px solid #ccc;
+    margin-bottom: 10px;
+    border: 2px solid none; /* border: ancho estilo color; */
     border-radius: 4px;
+    box-sizing: border-box;
   }
   
-  button[type="submit"] {
-    background-color: #4CAF50;
-    color: white;
+  .boxContacto form button[type="submit"] {
+    display: block;
+    margin: 0 auto;
     padding: 10px 20px;
+    background-color: #45bb49;
+    color: black;
     border: none;
     border-radius: 4px;
     cursor: pointer;
   }
-  
-  button[type="submit"]:hover {
-    background-color: #3e8e41;
+  .boxContacto form button:hover{
+    color: aliceblue;
+    background-color: hsl(122, 67%, 11%);
   }
   
