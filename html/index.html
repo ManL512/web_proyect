@@ -5,9 +5,39 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/home/miguel/Curso HTML5 y CSS/3 CSS-SASS/css/style.css">
+    <script src="/home/miguel/Curso HTML5 y CSS/3 CSS-SASS/css/javascript.js"></script>
     <title> Sass - Html </title>
 </head>
 <body>
+  <script class="formulario js">
+    const form = document.getElementById("formulario");
+
+form.addEventListener("submit", (event) => {
+  event.preventDefault();
+
+  const formData = new FormData(form);
+
+  const data = {
+    nombre: formData.get("nombre"),
+    apellido: formData.get("apellido"),
+    email: formData.get("email"),
+    mensaje: formData.get("mensaje")
+  };
+
+  // Verificar si todos los campos del formulario están completos
+  if (data.nombre && data.apellido && data.email && data.mensaje) {
+    // Aquí puedes enviar los datos del formulario a tu servidor o hacer otras acciones
+    console.log(data);
+  } else {
+    // Mostrar mensaje de error
+    const error = document.getElementById("error");
+    error.textContent = "Por favor, complete todos los campos del formulario.";
+  }
+
+  // Aquí puedes enviar los datos del formulario a tu servidor o hacer otras acciones
+});
+
+  </script>
     <section class="barra-nav">
         <nav>
             <ul>
@@ -20,11 +50,12 @@
     </section>
     <br>
     <section class="boxPrincipal">
-        <!--  
-        <img src="/home/miguel/Curso HTML5 y CSS/1 HTML/imgns/img1">
-        <img src="/home/miguel/Curso HTML5 y CSS/1 HTML/imgns/losmovileslogo.jpeg">
-        -->
-    </section>
+      <!-- Contenido de la caja aquí -->
+      <div class="botones">
+        <button id="btn-anterior">Anterior</button>
+        <button id="btn-siguiente">Siguiente</button>
+      </div>
+    </section>    
     <br>
     <section class="boxContacto">
         <h4>¡Conecta con nosotros hoy y lleva tu empresa de transporte al siguiente nivel! </h4>
@@ -43,10 +74,10 @@
               <textarea id="mensaje" name="mensaje"></textarea><br><br>
               
               <button type="submit">Enviar</button>
+
             </form>
           </div>
-          
-          
+
     </section>
 </body>
 
