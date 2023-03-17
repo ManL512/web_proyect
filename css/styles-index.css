@@ -1,0 +1,155 @@
+body{
+    background-color: #FFFD95;
+}
+/*nav*/
+nav ul {
+    max-width: 100%; /*Max didth al 100% se usa si queremos hacer nuestro sitio web con la normativa responsive*/
+    height: auto;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #243763;
+    font-style: italic; /*Fuente de la lista*/
+  }
+  
+  nav li {
+    margin-right: 60px;
+  }
+  
+  nav li:last-child {
+    margin-right: 0;
+  }
+  
+  
+  nav a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: whitesmoke;
+    /*font-style: italic;*/
+  }
+  a:hover{
+    color: black;
+  }
+    body{
+        scroll-margin-right: initial;
+    }
+
+    /*boxPrincipal, el que contiene las imagenes de vista.*/
+  .boxPrincipal {
+    display: flex; /* Esta propiedad convierte el contenedor en un contenedor flexible y permite aplicar otras propiedades de Flexbox */
+    flex-direction: row; 
+    /*justify content: alinea los elementos flexibles a lo largo del eje principal del box.*/
+    flex-wrap: wrap;
+    width: auto; /* ancho de la caja*/
+    height: 600px; /* altura de la caja */
+    background-color: #243763;
+    position: relative; /* Posición relativa para alinear los botones */
+    padding: 20px; /* Espacio interno para el contenido */
+  }
+  
+  .boxChild{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 50%;
+    background-color: #fff; 
+    position: absolute;
+    top: 25%;
+    left: 25%;
+  }
+
+  .botones {
+    position: absolute; /* Posición absoluta para superponer los botones */
+    display: flex; /* Esta propiedad convierte el contenedor en un contenedor flexible y permite aplicar otras propiedades de Flexbox */
+    justify-content: space-between; /* Alinea los elementos flexibles con un espacio entre ellos */
+    width: 100%; /* Ancho del contenedor de los botones */
+    top: 50%; /* Centrar boton */
+    left: 0; /* Alinear a la izquierda */
+  }
+  
+  .botones button {
+    font-style: italic;
+    background-color: #4CAF50; /* Color de fondo */
+    border: none; /* Sin borde */
+    color: white; /* Color de texto */
+    padding: 10px 20px; /* Espacio interno */
+    text-align: center; /* Alineación de texto */
+    text-decoration: none; /* Sin subrayado */
+    display: inline-block; /* Mostrar como bloque */
+    font-size: 16px; /* Tamaño de fuente */
+    margin: 5px; /* Espacio externo */
+  }
+  
+  .botones button:hover {
+    background-color: #3e8e41; /* Color de fondo al pasar el cursor */
+  }
+  
+
+  /* box de contactarse DO NOT TOUCH !!*/
+  .boxContacto {
+    font-style: italic;
+    color: aliceblue;
+    background-color: #243763;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+  }
+  
+  .boxContacto h4 {
+    font-size: 125%;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .boxContacto form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .boxContacto form input[type="text"],
+  .boxContacto form input[type="email"],
+  .boxContacto form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 2px solid none; /* border: ancho estilo color; */
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  .boxContacto form button[type="submit"] {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 20px;
+    background-color: #45bb49;
+    color: black;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  .boxContacto form button:hover{
+    color: aliceblue;
+    background-color: hsl(122, 67%, 11%);
+  }
+  #nombre:hover{
+    height: 45px;
+    background-color: #BAD7E9;
+  }
+  #apellido:hover{
+    height: 45px;
+    background-color: #BAD7E9;
+  }
+  #email:hover{
+    height: 45px;
+    background-color: #BAD7E9;
+  }
+  #mensaje:hover{
+    height: 45px;
+    background-color: #BAD7E9;
+  }
+  
