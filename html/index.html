@@ -9,35 +9,7 @@
     <title> Sass - Html </title>
 </head>
 <body>
-  <script class="formulario js">
-    const form = document.getElementById("formulario");
-
-form.addEventListener("submit", (event) => {
-  event.preventDefault();
-
-  const formData = new FormData(form);
-
-  const data = {
-    nombre: formData.get("nombre"),
-    apellido: formData.get("apellido"),
-    email: formData.get("email"),
-    mensaje: formData.get("mensaje")
-  };
-
-  // Verificar si todos los campos del formulario están completos
-  if (data.nombre && data.apellido && data.email && data.mensaje) {
-    // Aquí puedes enviar los datos del formulario a tu servidor o hacer otras acciones
-    console.log(data);
-  } else {
-    // Mostrar mensaje de error
-    const error = document.getElementById("error");
-    error.textContent = "Por favor, complete todos los campos del formulario.";
-  }
-
-  // Aquí puedes enviar los datos del formulario a tu servidor o hacer otras acciones
-});
-
-  </script>
+    <!-- Barra superior -->
     <section class="barra-nav">
         <nav>
             <ul>
@@ -50,10 +22,14 @@ form.addEventListener("submit", (event) => {
     </section>
     <br>
     <section class="boxPrincipal">
-      <!-- Contenido de la caja aquí -->
-      <div class="botones">
-        <button id="btn-anterior">Anterior</button>
-        <button id="btn-siguiente">Siguiente</button>
+      <div id="slideshow">
+         <!-- Imagenes -->
+         <img src="/home/miguel/Curso HTML5 y CSS/3 CSS-SASS/imgns/img0" class="slide">
+         <img src="/home/miguel/Curso HTML5 y CSS/3 CSS-SASS/imgns/losmovileslogo.jpeg" class="slide">
+         <img src="/home/miguel/Curso HTML5 y CSS/3 CSS-SASS/imgns/img1" class="slide">
+         <div id="botones">
+           <button onclick="anterior()">Anterior</button>
+           <button onclick="siguiente()">Siguiente</button>
       </div>
     </section>    
     <br>
